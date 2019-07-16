@@ -24,6 +24,7 @@ add_executable(TestBlockbuster
         src/Customer.cpp
         test/mocks/MockRentable.h
         test/mocks/MockCustomer.h
-        test/TestRentalController.cpp)
+        test/TestRentalController.cpp
+        test/TestMoney.cpp)
 
 target_include_directories(TestBlockbuster PRIVATE include)
