@@ -11,7 +11,7 @@ add_executable(Blockbuster
         src/Video.cpp
         include/Money.h
         include/Customer.h
-        src/Customer.cpp)
+        src/Customer.cpp test/mocks/MockRentable.h test/mocks/MockCustomer.h)
 
 target_include_directories(Blockbuster PRIVATE include)
 
@@ -21,6 +21,6 @@ add_executable(TestBlockbuster
         test/testmain.cpp
         test/TestCustomer.cpp
         include/Customer.h
-        src/Customer.cpp)
+        src/Customer.cpp test/TestRentalController.cpp)
 
 target_include_directories(TestBlockbuster PRIVATE include)
