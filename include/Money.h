@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdint>
+#include <ostream>
 
 struct Money {
 private:
@@ -44,5 +45,9 @@ public:
         NormalizeValue();
 
         return *this;
+    }
+
+    friend std::ostream& operator<< (std::ostream& s, const Money& money){
+        return s << "#" << money.pounds << "." << money.pence;;
     }
 };

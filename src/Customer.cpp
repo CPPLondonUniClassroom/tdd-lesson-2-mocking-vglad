@@ -6,6 +6,7 @@ Customer::Customer(std::string name, std::string address)
 
 const std::string& Customer::Name() const {
     return name;
+    //return std::string("John Smith");
 }
 const std::string& Customer::Address() const {
     return address;
